@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurant_system.Controllers.ManagerAccountInfoPageController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="334.0">
+         <children>
+            <Text fill="#960202" layoutX="93.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account info" textAlignment="RIGHT" wrappingWidth="205.554443359375">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+            </Text>
+            <Pane layoutX="12.0" layoutY="111.0" prefHeight="200.0" prefWidth="311.0" style="-fx-background-color: #960202; -fx-background-radius: 15;">
+               <children>
+                  <Text fill="#fcf9f9" layoutX="9.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="9.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="9.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="name" layoutX="148.0" layoutY="21.0" prefHeight="40.0" prefWidth="149.0" style="-fx-background-radius: 8;" />
+                  <TextField fx:id="username" layoutX="148.0" layoutY="77.0" prefHeight="40.0" prefWidth="149.0" style="-fx-background-radius: 8;" />
+                  <TextField fx:id="password" layoutX="148.0" layoutY="134.0" prefHeight="40.0" prefWidth="149.0" style="-fx-background-radius: 8;" />
+               </children>
+            </Pane>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#960202" height="40.0" layoutX="168.0" layoutY="330.0" stroke="#960202" strokeType="INSIDE" width="96.0" />
+            <Text fill="WHITE" layoutX="168.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHANGE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Text>
+            <Button fx:id="btChange" layoutX="168.0" layoutY="330.0" mnemonicParsing="false" onAction="#changeBtnPressed" onKeyPressed="#toChangeCursor" onMouseClicked="#toChangeCursor" onMouseDragged="#toChangeCursor" onMouseMoved="#toChangeCursor" opacity="0.0" prefHeight="40.0" prefWidth="96.0" text="Button" />
+            <Text fx:id="successfullRegistr" fill="#159626" layoutX="91.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="errorRegistr" fill="RED" layoutX="51.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="230.79998779296875">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#960202" height="40.0" layoutX="64.0" layoutY="330.0" stroke="#960202" strokeType="INSIDE" width="96.0" />
+            <Text fill="WHITE" layoutX="66.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOG OUT">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Text>
+            <Button fx:id="btLogOut" layoutX="64.0" layoutY="330.0" mnemonicParsing="false" onAction="#btLogOutPressed" onKeyPressed="#toChangeCursor" onMouseClicked="#toChangeCursor" onMouseDragged="#toChangeCursor" onMouseMoved="#toChangeCursor" opacity="0.0" prefHeight="40.0" prefWidth="96.0" text="Button" />
+            <ImageView fitHeight="52.0" fitWidth="64.0" layoutX="37.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/GoBack_icon.PNG" />
+               </image>
+            </ImageView>
+            <Button fx:id="btGoBack" layoutX="38.0" layoutY="28.0" mnemonicParsing="false" onAction="#btGoBackPressed" onKeyPressed="#toChangeCursor" onMouseClicked="#toChangeCursor" onMouseDragged="#toChangeCursor" onMouseMoved="#toChangeCursor" opacity="0.0" prefHeight="52.0" prefWidth="52.0" style="-fx-background-radius: 50;" text="Button" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

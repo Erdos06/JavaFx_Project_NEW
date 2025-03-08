@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurant_system.Controllers.LoginPageController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="510.0" stroke="WHITE" strokeType="INSIDE" width="309.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#760000" height="510.0" layoutX="309.0" stroke="#464646" strokeType="INSIDE" width="429.0" />
+        <ImageView fitHeight="291.0" fitWidth="279.0" layoutX="15.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="449.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Login">
+            <font>
+                <Font name="Arial Bold" size="50.0" />
+            </font>
+        </Text>
+        <TextField fx:id="idField" alignment="CENTER" layoutX="395.0" layoutY="210.0" prefHeight="57.0" prefWidth="258.0" promptText="USER NAME" style="-fx-background-radius: 12;">
+            <font>
+                <Font name="Arial" size="30.0" />
+            </font></TextField>
+        <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="395.0" layoutY="281.0" prefHeight="57.0" prefWidth="258.0" promptText="PASSWORD" style="-fx-background-radius: 12;">
+            <font>
+                <Font name="Lucida Console" size="30.0" />
+            </font></PasswordField>
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="63.0" layoutX="406.0" layoutY="363.0" onMouseDragReleased="#toChangeCursor" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: pointer;" width="112.0" />
+        <Text fill="#990a0a" layoutX="414.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN IN">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Text>
+        <Button fx:id="signInButton" layoutX="406.0" layoutY="363.0" mnemonicParsing="false" onAction="#btSignInPressed" onKeyPressed="#toChangeCursor" onMouseClicked="#toChangeCursor" onMouseDragged="#toChangeCursor" onMouseMoved="#toChangeCursor" opacity="0.0" prefHeight="63.0" prefWidth="112.0" textFill="#960202" />
+        <Text fx:id="ErrorTxt" fill="RED" layoutX="372.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="286.60009765625" />
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="63.0" layoutX="529.0" layoutY="363.0" onMouseDragReleased="#toChangeCursor" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: pointer;" width="112.0" />
+        <Text fill="#990a0a" layoutX="534.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Text>
+        <Button fx:id="signUpButton" layoutX="529.0" layoutY="362.0" mnemonicParsing="false" onAction="#btSignUpPressed" onKeyPressed="#toChangeCursor" onMouseClicked="#toChangeCursor" onMouseDragged="#toChangeCursor" onMouseMoved="#toChangeCursor" opacity="0.0" prefHeight="63.0" prefWidth="112.0" textFill="#960202" />
+    </children>
+</Pane>
